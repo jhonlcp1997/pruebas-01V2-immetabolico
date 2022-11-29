@@ -5,9 +5,7 @@ export default function index() {
 
   const [value, setValue] = useState(0);
 
-  setInterval(()=>{
-    console.log("holis")
-  }, 3000)
+  
 
   return (
     <section className="login" >
