@@ -1,0 +1,66 @@
+.spanBar {
+  width: 100%;
+
+  .article {
+    display: flex;
+    width: 95%;
+    max-width: 70rem;
+    border: 1px solid $green2;
+    margin: auto;
+    padding: 0 1rem;
+
+    .article__one,
+    .article__two {
+      width: 50%;
+    }
+
+    .article__one {
+      display: flex;
+      font-family: $poppins;
+      align-items: center;
+
+      .subtitle {
+        font-size: 4rem;
+        font-family: $lobster;
+        margin-right: 0.7rem;
+      }
+
+      .content {
+        h4 {
+          font-family: $lobster;
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    .article__two {
+      align-items: center;
+      justify-content: space-around;
+      display: flex;
+      column-gap: 2rem;
+
+      p {
+        font-family: $poppins;
+      }
+
+      .content-button {
+        position: relative;
+        z-index: 1;
+
+        .button {
+          font-size: 1.2rem;
+          padding: 0.3rem 0.8rem;
+          border-radius: 5px;
+          color: $white;
+          font-family: $poppins;
+          background-color: $blue-main;
+
+          &:hover {
+            transition: 0.2s linear;
+            background-color: $blue-2;
+          }
+        }
+      }
+    }
+  }
+}

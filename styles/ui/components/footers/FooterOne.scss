@@ -1,0 +1,85 @@
+.footer {
+  margin-top: 4rem;
+
+  .footer__top {
+    width: 95%;
+    margin: auto;
+    max-width: 70rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $abel;
+    // background-color: $green3;
+
+    .box-one {
+      flex: 2 2 30rem;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+
+      .list-pages {
+        flex: 1 1 10rem;
+
+        .li {
+          font-family: $poppins;
+          margin: 0.5rem;
+          &:hover {
+            margin-left: 1rem;
+            transition: 0.3s linear;
+            color: $green2;
+          }
+        }
+      }
+    }
+
+    .box-two {
+      flex: 1 1 15rem;
+      padding: 0.5rem;
+
+      .list-pages {
+        display: flex;
+
+        .li {
+          margin: 0.5rem 0.8rem;
+
+          a {
+            color: $black;
+            font-size: 1.5rem;
+          }
+
+          &:hover {
+            a {
+              color: $green2;
+              transition: 0.3s linear;
+            }
+          }
+        }
+      }
+    }
+
+    .list-pages {
+      list-style: none;
+      cursor: pointer;
+
+      .li {
+        .fa-chevron-right {
+          color: $green2;
+        }
+      }
+    }
+  }
+
+  .footer__bottom {
+    width: 100%;
+    background-color: $black4;
+    color: $white;
+    text-align: center;
+    font-family: $abel;
+    padding: 0.3rem;
+
+    .subtitle {
+      &:first-child {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

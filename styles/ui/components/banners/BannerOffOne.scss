@@ -1,0 +1,88 @@
+.bannerOffer {
+  width: 100%;
+  position: relative;
+
+  .content {
+    width: 95%;
+    margin: auto;
+    max-width: 70rem;
+    position: relative;
+    height: 60vh;
+    min-height: 22rem;
+    display: flex;
+
+    &::before {
+      z-index: 0;
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      /* Specify the background image to be used */
+      background-image: url(/image/election-egi_emi/proc-bg-4.webp);
+      background-size: cover;
+      background-position: center;
+      /* Specify the background image */
+      opacity: 0.9;
+    }
+
+    .bannerOffer__box {
+      background-color: $white;
+      width: 20rem;
+      // height: 12rem;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin: auto 1rem;
+      padding: 1.5rem 1rem;
+      box-shadow: $boxShadow1;
+
+      h3 {
+        font-family: $lobster;
+      }
+
+      h2 {
+        font-family: $abel;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-family: $poppins;
+        margin-bottom: 1rem;
+      }
+
+      .content-button {
+        position: relative;
+        z-index: 1;
+
+        .button {
+          font-size: 1.2rem;
+          padding: 0.3rem 0.8rem;
+          border-radius: 5px;
+          color: $white;
+          font-family: $poppins;
+          background-color: $green3;
+
+          &:hover {
+            transition: 0.2s linear;
+            background-color: $green2;
+          }
+        }
+      }
+
+      .content-info {
+        position: relative;
+        z-index: 1;
+
+        .content-info__eventOffer {
+          padding: 0.3rem 0.8rem;
+          background-color: #007cc3;
+          font-family: $poppins;
+          color: $white;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}

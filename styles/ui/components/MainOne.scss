@@ -1,0 +1,161 @@
+.main {
+  width: 100%;
+  position: relative;
+
+  .main__carrusel {
+    width: 95%;
+    max-width: 70rem;
+    margin: auto;
+    // height: 36rem;
+    display: flex;
+    position: relative;
+    z-index: 0;
+
+    .carrusel {
+      width: 100%;
+      display: flex;
+      // margin: auto 0;
+      position: relative;
+      min-height: 20rem;
+      z-index: 1;
+
+      .article_carrusel {
+        // background-color: #009f46;
+        display: flex;
+        width: 100%;
+        margin: auto;
+        z-index: 1;
+        position: absolute;
+        padding: 9rem 0 9rem 1rem;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.973);
+        transition: 0.6s linear;
+
+        &:first-child {
+          &::before {
+            background-image: url(/image/servicios/ninos.png);
+          }
+        }
+
+        &:nth-child(2) {
+          &::before {
+            background-image: url(/image/servicios/dolor.png);
+          }
+        }
+
+        &:nth-child(3) {
+          &::before {
+            background-image: url(/image/servicios/gastro.png);
+          }
+        }
+
+        &::before {
+          z-index: 0;
+          content: "";
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          /* Specify the background image to be used */
+          background-size: cover;
+          background-position: center;
+          /* Specify the background image */
+          opacity: 0.5;
+        }
+
+        &.open {
+          position: relative;
+          opacity: 1;
+          transition: 0.6s linear;
+          z-index: 2;
+        }
+
+        .article_carrusel__content {
+          padding-right: 2rem;
+          position: relative;
+          min-height: 20rem;
+          color: $white;
+          z-index: 1;
+
+          .subtitle {
+            position: relative;
+            font-family: $abel;
+            font-size: 2rem;
+          }
+
+          .paragraph {
+            font-family: $poppins;
+            position: relative;
+            z-index: 1;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            span {
+              font-size: 1.5rem;
+            }
+          }
+
+          .content-button {
+            position: relative;
+            z-index: 1;
+
+            .button {
+              font-size: 1.5rem;
+              padding: 0.3rem 0.8rem;
+              border-radius: 5px;
+              color: $white;
+              font-family: $poppins;
+              background-color: $green3;
+
+              &:hover {
+                transition: 0.2s linear;
+                background-color: $green2;
+              }
+            }
+          }
+        }
+
+        .article_carrusel__graphics {
+          z-index: 1;
+          position: relative;
+
+          img {
+            width: 15rem;
+          }
+        }
+      }
+    }
+  }
+
+  .main__points {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .list_points {
+      width: 95%;
+      max-width: 70rem;
+      margin: auto;
+      // height: 95%;
+      max-height: 8rem;
+      display: flex;
+      flex-direction: column;
+      // background-color: #007cc3;
+      justify-content: space-between;
+      padding-left: 1rem;
+
+      .point {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $blue-main;
+        border-radius: 50%;
+        margin: 0.4rem;
+
+        &.open {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

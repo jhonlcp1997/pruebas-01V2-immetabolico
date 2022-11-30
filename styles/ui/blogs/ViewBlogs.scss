@@ -1,0 +1,149 @@
+.blogs {
+  width: 100%;
+  padding: 2rem 0 0 0;
+
+  .subtitle {
+    text-align: center;
+    font-family: $poppins;
+    margin-bottom: 2rem;
+  }
+
+  .box-container {
+    margin: auto;
+    width: 95%;
+    max-width: 70rem;
+
+    @include grid(20rem);
+
+    .box {
+      border: $border;
+      box-shadow: $boxShadow2;
+
+      &:hover .image img {
+        transform: scale(1.1);
+        transition: 0.2s ease;
+      }
+
+      .image {
+        height: 20rem;
+        width: 100%;
+        border-bottom: $border;
+        overflow: hidden;
+
+        &.one{
+          height: 30rem;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .content {
+        padding: 1rem;
+        position: relative;
+
+        .date {
+          position: absolute;
+          top: -2.6rem;
+          right: 3rem;
+          height: 5rem;
+          width: 5rem;
+          border: 0.5rem solid $white;
+          border-radius: 50%;
+          background: $green3;
+          text-align: center;
+          padding-top: 0.4rem;
+
+          h3 {
+            font-size: 2rem;
+            line-height: 1;
+            color: $white;
+          }
+
+          span {
+            font-size: 1rem;
+            color: $white;
+          }
+        }
+
+        .user {
+          display: block;
+          padding-bottom: 1rem;
+          font-size: 1.2rem;
+          color: $black2;
+
+          i {
+            padding-right: 0.5rem;
+            color: $blue-main;
+          }
+
+          &:hover {
+            color: $blue-main;
+          }
+        }
+
+        .title {
+          font-size: 1.5rem;
+          color: $black;
+          font-family: $lobster;
+
+          &:hover {
+            color: $blue-main;
+          }
+        }
+
+        p {
+          padding: 1rem 0;
+          line-height: 2;
+          color: $black2;
+          font-size: 1rem;
+          font-family: $poppins;
+        }
+
+        .btn {
+          font-family: $poppins;
+          padding: 0.3rem 0.5rem;
+          border-radius: 5px;
+          background-color: $blue-main;
+          color: $white;
+
+          &:hover {
+            background-color: $blue-2;
+          }
+        }
+
+        .before {
+          font-family: $poppins;
+          background-color: $black;
+          padding: 0.2rem 0.5rem;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .section-products__buttons {
+    width: 95%;
+    max-width: 16rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-size: 1.7rem;
+    }
+
+    a {
+      background-color: $green3;
+      color: $white;
+      font-family: $poppins;
+      padding: 0.2rem 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+  }
+}

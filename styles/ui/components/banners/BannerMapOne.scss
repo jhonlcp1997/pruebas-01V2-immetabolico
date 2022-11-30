@@ -1,0 +1,59 @@
+.bannerMap {
+  margin: 2rem 0;
+  width: 100%;
+
+  .bannerMap__content {
+    width: 95%;
+    max-width: 70rem;
+    margin: auto;
+    background-color: $green3;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+
+    .content {
+      font-family: $poppins;
+      flex: 1 0 20rem;
+      margin: auto;
+      color: $white;
+      gap: 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-around;
+      padding: 0.5rem;
+
+      .content__one,
+      .content__two {
+        flex: 1 1 18rem;
+        max-width: 20rem;
+        // min-width: 16rem;
+        // background-color: #007cc3;
+
+        header {
+          display: flex;
+          justify-content: space-between;
+          font-size: 1rem;
+          align-items: center;
+          margin: 0.5rem 0;
+        }
+      }
+    }
+
+    .map {
+      flex: 10 10 30rem;
+      display: flex;
+      margin: auto;
+      // width: 80%;
+
+      .iframe {
+        margin: auto;
+        width: 100%;
+        max-width: 1366px;
+        height: 70vh;
+
+        background-color: black;
+      }
+    }
+  }
+}

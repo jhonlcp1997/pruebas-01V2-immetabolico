@@ -13,9 +13,48 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+
+
+$white: #fff;
+$black: #000;
+$black2: #666;
+$black4: #444;
+$green1: #a6ce39;
+$green2: #62bb46;
+$green3: #009f46;
+$pink1: #f4c6de;
+$pink2: #f5a4c7;
+$pink3: #f173ac;
+$red: #e60000;
+$border: 0.2rem solid $green2;
+$border2: 0.1rem solid $green2;
+$boxShadow1: -3rem 0 80px -70px rgb(51, 46, 46);
+$boxShadow2: 0 0.1rem 10px rgba(51, 46, 46, 0.466);
+$boxShadow3: -3rem 0.4rem 10px rgba(51, 46, 46, 0.7);
+$blue-main: #007cc3;
+$blue-2: #389eda;
+
+$franklin: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+$abel: "Abel", sans-serif;
+$poppins: "Poppins", sans-serif;
+$lobster: "Lobster", cursive;
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
 }
 
 @import "pages/login/login";
+@import "pages/index";
 
 
 
@@ -28,5 +67,21 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
   }
 }

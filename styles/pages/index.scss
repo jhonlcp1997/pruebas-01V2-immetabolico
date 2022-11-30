@@ -1,3 +1,15 @@
-div {
-  background-color: #f444;
-}
+@import "../ui/components/headers/HeaderOne";
+
+@import "../ui/components/MainOne.scss";
+
+@import "../ui/components/spanBars/spanBarOne";
+
+@import "../ui/components/jumbotrons/JumbotronOne";
+
+@import "../ui/components/banners/BannerOffOne";
+
+@import "../ui/blogs/ViewBlogs";
+
+@import "../ui/components/banners/BannerMapOne";
+
+@import "../ui/components/footers/FooterOne";

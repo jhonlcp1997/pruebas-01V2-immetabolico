@@ -1,0 +1,82 @@
+.info-jumbotrons {
+  width: 100%;
+  padding: 5rem 0;
+
+  .subtitle {
+    text-align: center;
+    font-family: $poppins;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .info-jumbotrons__box {
+    width: 95%;
+    max-width: 70rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .jumbotronsArticle {
+      // background-color: #007cc3;
+      padding: 2rem;
+      display: flex;
+      border-radius: 5px;
+      border: 3px solid $green2;
+      flex-wrap: wrap;
+
+      &.main {
+        flex: 1 1 22rem;
+
+        .img {
+          width: 6rem;
+        }
+      }
+
+      .img {
+        margin: auto 1rem;
+        width: 3rem;
+        padding-bottom: 2rem;
+      }
+
+      .article__content {
+        flex: 1 1 16rem;
+        h3 {
+          font-size: 1.5rem;
+          font-family: $abel;
+        }
+
+        p {
+          font-family: $poppins;
+        }
+
+        .content-button {
+          margin-top: 2rem;
+          .button {
+            padding: 0.2rem 0.4rem;
+            background-color: $green3;
+            font-family: $poppins;
+            color: $white;
+            border-radius: 5px;
+
+            &:hover {
+              background-color: $green2;
+              transition: 0.2s linear;
+            }
+          }
+        }
+      }
+    }
+
+    .sectionMiniJumbos {
+      flex: 1 1 25rem;
+
+      .jumbotronsArticle {
+        &:first-child {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
