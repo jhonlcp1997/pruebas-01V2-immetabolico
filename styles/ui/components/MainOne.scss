@@ -159,3 +159,33 @@
     }
   }
 }
+
+@media screen  and (max-width: 750px){
+  .main {
+    .main__carrusel {
+      .carrusel {
+        .article_carrusel {
+          padding: 1rem;
+          height: calc(100vh - 72px);
+          min-height: 500px;
+
+          .article_carrusel__content {
+            margin: auto;
+          }
+
+          .article_carrusel__graphics {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .main__points {
+      .list_points {
+        margin-left: auto;
+        margin-right: 1rem;
+        width: 3rem;
+      }
+    }
+  }
+}

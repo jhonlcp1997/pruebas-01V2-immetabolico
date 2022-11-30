@@ -147,3 +147,17 @@
     }
   }
 }
+
+@media screen and (max-width: 750px){
+  .blogs{
+    .box-container {
+      .box {
+        .image {
+          &.one{
+            height: 20rem;
+          }
+        }
+      }
+    }
+  }
+}

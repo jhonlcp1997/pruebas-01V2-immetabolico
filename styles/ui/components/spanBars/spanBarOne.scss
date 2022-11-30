@@ -64,3 +64,23 @@
     }
   }
 }
+
+@media screen and (max-width: 750px){
+  .spanBar {
+    .article {
+      display: block;
+      margin: auto;
+      width: 95%;
+
+      .article__one,
+      .article__two {
+        width: 100%;
+        padding: 0.5rem;
+      }
+
+      .article__one {
+        justify-content: center;
+      }
+    }
+  }
+}

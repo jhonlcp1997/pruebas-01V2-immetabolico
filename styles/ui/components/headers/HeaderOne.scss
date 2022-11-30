@@ -110,3 +110,89 @@
     }
   }
 }
+
+@media screen and (max-width: 750px) {
+  .header-main {
+    .header-main__navbar {
+      position: relative;
+      nav {
+        &:nth-child(2),
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+
+      .nav-four {
+        display: flex;
+        column-gap: 4vw;
+
+        .car {
+          border: none;
+          background-color: $green2;
+          color: $white;
+          padding: 0.75rem 0.8rem 0.55rem 0.8rem;
+        }
+
+        #menu-btn {
+          &.active {
+            background-color: $blue-main;
+            color: $white;
+          }
+        }
+      }
+
+      .nav-contain__two_three {
+        display: inline;
+        width: 70%;
+        height: 90vh;
+        min-height: 40rem;
+        background-color: $white;
+        top: 100%;
+        right: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        position: absolute;
+        z-index: 2;
+        padding: 1rem;
+
+        &.active {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          box-shadow: $boxShadow3;
+        }
+
+        .nav-two,
+        .nav-three {
+          display: flex;
+        }
+
+        .nav-two {
+          .nav-two__list {
+            display: inline-block;
+            width: 100%;
+
+            .li {
+              border-left: $border2;
+              border-right: $border2;
+              padding: 1rem 0.5rem;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              margin: 1rem 0;
+            }
+          }
+        }
+
+        .nav-three {
+          display: flex;
+          justify-content: space-between;
+          padding: 1rem 0.5rem;
+
+          .nav-three__chevron {
+            text-align: right;
+            color: $green2;
+            font-family: $poppins;
+          }
+        }
+      }
+    }
+  }
+}
