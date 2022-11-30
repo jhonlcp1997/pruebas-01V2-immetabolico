@@ -1,14 +1,6 @@
-import Head from "next/head";
-import Script from "next/script";
 import { HeadLayoutOne } from "../Layouts/Heads/HeadLayoutOne";
 import { ViewBlogs } from "../ui/blogs/ViewBlogs";
-import { BannerMapOne } from "../ui/components/banners/BannerMapOne";
-import { BannerOffOne } from "../ui/components/banners/BannerOffOne";
-import { FooterOne } from "../ui/components/footers/FooterOne";
-import { HeaderOne } from "../ui/components/headers/HeaderOne";
-import { JumbotronOne } from "../ui/components/jumbotrons/JumbotronOne";
-import { MainOne } from "../ui/components/MainOne";
-import { SpanBarOne } from "../ui/components/spanBars/SpanBarOne";
+import { BannerMapOne, BannerOffOne, FooterOne, HeaderOne, JumbotronOne, MainOne, SpanBarOne } from "../ui/components";
 
 
 export default function Home() {
@@ -31,8 +23,6 @@ export default function Home() {
 
         <FooterOne />
 
-        {/* 
-        {/* <scrip src="../js/immfarma/menu.js"></script> */}
       </HeadLayoutOne>
     </>
   )

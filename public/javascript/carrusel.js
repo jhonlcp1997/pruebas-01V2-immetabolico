@@ -1,6 +1,5 @@
 const $articleCarrusel = document.querySelectorAll('.article_carrusel');
 const $pointsCarrusel = document.querySelector('.list_points').children;
-console.log("imprimi");
 
 let counterCarrusel = 0;
 
