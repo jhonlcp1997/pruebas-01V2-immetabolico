@@ -1,7 +1,25 @@
 import Head from "next/head";
-import Script from "next/script";
+import { useEffect, useState } from "react";
+import { incrementalCarrusel } from "../../utils/intervals";
+
+const articlesCarruselList = [
+  {
+    id: 0,
+    img: '../../image/1.jpg',
+  },
+  {
+    id: 1,
+    img: '../../image/2.jpg',
+  },
+  {
+    id: 2,
+    img: '../../image/3.jpg',
+  },
+]
 
 export default function index() {
+
+  const {timer} = incrementalCarrusel(articlesCarruselList);
 
   return (
     <>
@@ -13,18 +31,12 @@ export default function index() {
       <section className="login" >
         <div className="login__box">
           <div className="login__box__one">
-            <div className="article_carrusel open">
-              <img className="article_carrusel__img" src="../../image/1.jpg" alt="" />
-              <div className="subtitle"><img src="../../image/imm-logo-white-short-v2.svg" alt="" /><div></div><span>farma</span></div>
-            </div>
-            <div className="article_carrusel">
-              <img className="article_carrusel__img" src="../../image/2.jpg" alt="" />
-              <div className="subtitle"><img src="../../image/imm-logo-white-short-v2.svg" alt="" /><div></div><span>farma</span></div>
-            </div>
-            <div className="article_carrusel">
-              <img className="article_carrusel__img" src="../../image/3.jpg" alt="" />
-              <div className="subtitle"><img src="../../image/imm-logo-white-short-v2.svg" alt="" /><div></div><span>farma</span></div>
-            </div>
+            {articlesCarruselList.map((element) => (
+              <div className={`article_carrusel ${element.id === timer ? 'open' : ''}`}>
+                <img className="article_carrusel__img" src={element.img} alt="" />
+                <div className="subtitle"><img src="../../image/imm-logo-white-short-v2.svg" alt="" /><div></div><span>farma</span></div>
+              </div>
+            ))}
           </div>
 
           <div className="main__points">
@@ -58,8 +70,6 @@ export default function index() {
             </div>
           </div>
         </div>
-        {/* <script src="./javascript/carrusel.js"></script> */}
-        <Script src="./javascript/carrusel.js" />
       </section>
     </>
 
