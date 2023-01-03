@@ -11,7 +11,6 @@ export const incrementalCarrusel = ( carrusel: object[] ) =>{
           if (currentTime < carrusel.length - 1) {
             return currentTime + 1;
           } else {
-            console.log("End of interval");
             currentTime = 0;
             return currentTime;
           }

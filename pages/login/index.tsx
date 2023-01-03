@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import { incrementalCarrusel } from "../../utils/intervals";
 
 const articlesCarruselList = [
@@ -32,19 +31,11 @@ export default function index() {
         <div className="login__box">
           <div className="login__box__one">
             {articlesCarruselList.map((element) => (
-              <div className={`article_carrusel ${element.id === timer ? 'open' : ''}`}>
+              <div key={element.id} className={`article_carrusel ${element.id === timer ? 'open' : ''}`}>
                 <img className="article_carrusel__img" src={element.img} alt="" />
                 <div className="subtitle"><img src="../../image/imm-logo-white-short-v2.svg" alt="" /><div></div><span>farma</span></div>
               </div>
             ))}
-          </div>
-
-          <div className="main__points">
-            <div className="list_points">
-              <div className="point open"></div>
-              <div className="point"></div>
-              <div className="point"></div>
-            </div>
           </div>
 
           <div className="login__box__two">

@@ -23,6 +23,20 @@ const nextConfig = {
       },
     ]
   },
+  async redirects() {
+    return [
+        {
+            source: '/products',
+            destination: '/products/children',
+            permanent: true,
+        },
+        {
+          source: '/blogs',
+          destination: '/blogs/popular',
+          permanent: true,
+      },
+    ];
+},
 }
 
 module.exports = nextConfig

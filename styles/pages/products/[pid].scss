@@ -1,0 +1,124 @@
+
+.productId {
+  width: 100%;
+  margin-top: 2rem;
+  min-height: 30rem;
+  display: flex;
+
+  .product {
+    width: 95%;
+    max-width: 50rem;
+    margin: auto;
+    background-color: #eee;
+    box-shadow: $boxShadow2;
+    transform: scale(0);
+    animation: scale 0.3s ease forwards;
+
+    .product__box1 {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .img-product {
+        max-height: 20rem;
+        padding: 1rem;
+        flex: 1 1 20rem;
+      }
+
+      .product__box1__content {
+        flex: 1 1 20rem;
+        max-width: 20rem;
+        font-family: $poppins;
+        padding: 1.2rem;
+
+        .name-product {
+          font-family: $abel;
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        .labels {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.1rem 0.3rem;
+          font-size: 1rem;
+          margin-bottom: 1rem;
+          font-family: $abel;
+
+          span {
+            padding: 0 0.3rem;
+            border-radius: 15px;
+            background-color: $blue-main;
+            color: $white;
+          }
+        }
+
+        .priceOrigin-product {
+          display: flex;
+          justify-content: space-between;
+
+          span {
+            text-decoration: line-through;
+          }
+        }
+
+        .priceOffer-product {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+          font-size: 1.1rem;
+        }
+
+        a {
+          border-radius: 5px;
+          padding: 0.7rem;
+          background-color: $green2;
+          color: $white;
+
+          &:hover {
+            background-color: $white;
+            color: $black;
+            transition: 0.3s linear;
+          }
+        }
+      }
+    }
+
+    .product__box2 {
+      padding: 1rem;
+
+      .subtitle {
+        font-family: $abel;
+      }
+
+      .paragraph {
+        font-family: $poppins;
+      }
+    }
+
+    .product__box3 {
+      padding: 1rem;
+
+      a {
+        font-family: $poppins;
+        background-color: $black;
+        padding: 0.2rem 0.5rem;
+        color: $white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .productId {
+    .product {
+      .product__box1 {
+        .img-product {
+          display: flex;
+          margin: auto;
+          max-height: 15rem;
+        }
+      }
+    }
+  }
+}

@@ -37,7 +37,7 @@ export const HeaderOne = () => {
           <nav className="nav-two">
             <ul className="nav-two__list">
               {listPaths.map((element) => (
-                <li key={element.linkPath} className={`li ${routers.asPath === element.linkPath ? 'active' : ''}`}><Link href={element.linkPath}>{element.namePath}</Link></li>
+                <li key={element.linkPath} className={`li ${routers.asPath.includes(element.linkPath) ? 'active' : ''}`}><Link href={element.linkPath}>{element.namePath}</Link></li>
               ))}
             </ul>
           </nav>

@@ -1,0 +1,52 @@
+.form {
+  width: 95%;
+  max-width: 70rem;
+  margin: auto;
+
+  .box-one {
+    display: flex;
+    // background-color: #007cc3;
+    margin: auto;
+    justify-content: center;
+    column-gap: 1rem;
+    padding: 1.5rem 1rem;
+    font-family: $poppins;
+
+    .find {
+      border-radius: 5px;
+      border: $border2;
+      padding: 0.3rem;
+      max-width: 30rem;
+      width: 100%;
+      min-width: 10rem;
+      font-size: 1.2rem;
+      cursor: text;
+
+      &:focus,
+      &:hover {
+        transition: 0.3s linear;
+        border-left: $border;
+        border-right: $border;
+      }
+    }
+
+    .submit {
+      border-radius: 5px;
+      color: $white;
+      background-color: $green3;
+      padding: 0.3rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+
+      &:hover {
+        transition: 0.3s linear;
+        background-color: $green2;
+      }
+    }
+
+    .settings {
+      width: 1.6rem;
+      cursor: pointer;
+    }
+  }
+}

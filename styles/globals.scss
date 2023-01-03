@@ -55,6 +55,10 @@ $lobster: "Lobster", cursive;
 
 @import "pages/login/login";
 @import "pages/index";
+@import "ui/products/index";
+@import "pages/products/[pid]";
+
+@import "pages/events/index";
 
 
 

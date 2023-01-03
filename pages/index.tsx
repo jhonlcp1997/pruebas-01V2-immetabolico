@@ -15,7 +15,13 @@ export default function Home() {
 
         <JumbotronOne />
 
-        <BannerOffOne />
+        <BannerOffOne
+          idOfferEvent={12}
+          typeOffer="Oferta especial"
+          percentDiscount="Descuento de 30%"
+          descriptionOffer="Lorem lorem lorem lorem lorem lorem lorem"
+          rootPage="index"
+        />
 
         <ViewBlogs />
 
