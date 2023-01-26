@@ -45,7 +45,7 @@ const productsList = [
   {
     id: 4,
     imgProduct: '../../image/election-egi_emi/sangre-1.svg',
-    nameProduct: 'Cocacola deshidratada',
+    nameProduct: 'Agua deshidratada',
     tagsProduct: ['adultos', 'niño', 'jovenes', 'metabolido'],
     priceOriginal: 19,
     priceOffer: null,

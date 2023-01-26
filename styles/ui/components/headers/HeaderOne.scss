@@ -113,6 +113,35 @@
     .nav-contain__two_three,
     .nav-four {
       display: none;
+
+      a {
+        &.active {
+
+          color: $blue-main;
+
+          li {
+            color: $blue-main;
+            font-weight: bold;
+          }
+        }
+
+        &:hover {
+          background-color: #eee;
+          color: $blue-main;
+        }
+      }
+
+      .li{
+        &.active {
+
+          color: $blue-main;
+
+          li {
+            color: $blue-main;
+            font-weight: bold;
+          }
+        }
+      }
     }
   }
 }

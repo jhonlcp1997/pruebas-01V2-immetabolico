@@ -5,7 +5,7 @@ const eventsList = [
   {
     id: 0,
     eventPlace: 'Facebook',
-    eventDate: '12/12/2022',
+    eventDate: '10/01/2024',
     eventTimestamp: '2022-12-02T16:17:14-05:00',
     eventTitle: 'Titulo del evento',
     eventDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eius tempore atque suscipit reprehenderit repellendus dolores vitae eligendi adipisci corrupti, esse, quasi voluptatem impedit explicabo perspiciatis quod? Ipsa, quos iste.',
@@ -16,7 +16,7 @@ const eventsList = [
   {
     id: 1,
     eventPlace: 'Instragram',
-    eventDate: '03/12/2022',
+    eventDate: '09/01/2023',
     eventTimestamp: '2022-12-02T16:17:14-05:00',
     eventTitle: 'Titulo del evento',
     eventDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eius tempore atque suscipit reprehenderit repellendus dolores vitae eligendi adipisci corrupti, esse, quasi voluptatem impedit explicabo perspiciatis quod? Ipsa, quos iste.',
