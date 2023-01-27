@@ -1,6 +1,8 @@
 import { HeadLayoutOne } from "../Layouts/Heads/HeadLayoutOne";
 import { ViewBlogs } from "../ui/blogs/ViewBlogs";
 import { BannerMapOne, BannerOffOne, FooterOne, HeaderOne, JumbotronOne, MainOne, SpanBarOne } from "../ui/components";
+import { FormContacUs } from "../ui/components/forms/FormContacUs";
+import { SectionWhoWeAre } from "../ui/components/sections/SectionWhoWeAre";
 
 
 export default function Home() {
@@ -12,6 +14,8 @@ export default function Home() {
         <MainOne />
 
         <SpanBarOne />
+
+        {/* <SectionWhoWeAre /> */}
 
         <JumbotronOne />
 
@@ -26,6 +30,8 @@ export default function Home() {
         <ViewBlogs />
 
         <BannerMapOne />
+
+        <FormContacUs />
 
         <FooterOne />
 

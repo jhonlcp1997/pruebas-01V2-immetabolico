@@ -9,7 +9,7 @@
   z-index: 1000;
 
   .header-main__navbar {
-    max-width: 96rem;
+    max-width: 70rem;
     width: 95%;
     margin: auto;
     display: flex;
@@ -27,7 +27,7 @@
       }
       .nav-one__img {
         height: 2.3rem;
-        margin-right: 0.5rem;
+        margin-right: 0.2rem;
       }
 
       .title {
@@ -56,6 +56,7 @@
         }
 
         .li {
+          font-size: 1.2rem;
           &.active {
             a {
               color: $blue-main;
@@ -150,11 +151,8 @@
   .header-main {
     .header-main__navbar {
       position: relative;
-      nav {
-        &:nth-child(2),
-        &:nth-child(3) {
-          display: none;
-        }
+      .nav-two {
+        display: none;
       }
 
       .nav-four {
