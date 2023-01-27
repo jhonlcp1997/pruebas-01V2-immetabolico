@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -17,7 +18,6 @@ const listPaths = [
 export const HeaderOne = () => {
   const routers = useRouter();
   const [menuState, setMenuState] = useState('');
-  const [isLogedIn, setIsLogedIn] = useState(true);
   const [toggleClickedPerfil, setToggleClickedPerfil] = useState(true)
 
   const menuClick = () => {
@@ -36,7 +36,7 @@ export const HeaderOne = () => {
         <nav className="header-main__navbar">
 
           <nav className="nav-one">
-            <Link href="/"><img className="nav-one__img" src="../../image/endo-logo-short.svg" alt="logo" /><h1 className={`title ${routers.asPath === '/' ? 'active' : ''}`}>pruebas</h1></Link>
+            <Link href="/"><Image className="nav-one__img" width={90} height={100} style={{ width: "auto"}} src="/image/endo-logo-short.svg" alt="logo" /><h1 className={`title ${routers.asPath === '/' ? 'active' : ''}`}>pruebas</h1></Link>
           </nav>
 
           <nav className="nav-two">
