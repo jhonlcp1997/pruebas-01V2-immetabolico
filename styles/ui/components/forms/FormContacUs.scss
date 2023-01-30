@@ -69,5 +69,29 @@
         display: none;
       }
     }
+
+    .spanSended, .spanWarn {
+      width: 100%;
+      display: none;
+      text-align: center;  
+      padding: .3rem;
+      font-size: 1.2rem;
+      font-family: $poppins;
+      
+
+      &.active {
+        display: block;
+      }
+    }
+
+    .spanSended {
+      background-color: $green2;
+      color: $white;
+    }
+
+    .spanWarn {
+      background-color: yellow;
+      color: $black;
+    }
   }
 }

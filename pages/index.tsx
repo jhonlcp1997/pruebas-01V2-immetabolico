@@ -10,6 +10,7 @@ interface Props {
 }
 
 const Home: NextPage<Props>=({imm}) => {
+  
   return (
     <>
       <HeadLayoutOne title={`IMM - ${imm}`}>
@@ -46,9 +47,7 @@ const Home: NextPage<Props>=({imm}) => {
 
 export const getStaticProps: GetStaticProps = async( ctx ) => {
 
-  const imm = {
-    imm: 'immetabolico'
-  }
+  const imm = 'Metabolico'
 
   return {
     props: {
