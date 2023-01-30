@@ -53,11 +53,9 @@ $lobster: "Lobster", cursive;
   gap: 2rem;
 }
 
-@import "pages/login/login";
 @import "pages/index";
-@import "ui/products/index";
-@import "pages/products/[pid]";
-
+@import "pages/blog/index.scss";
+// @import "pages/products/[pid]";
 @import "pages/events/index";
 
 
