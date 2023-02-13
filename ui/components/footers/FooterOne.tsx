@@ -7,10 +7,9 @@ export const FooterOne = () => {
           <div className="box-one">
             <ul className="list-pages">
               <h2 className="subtitle">Páginas</h2>
-              <li className="li"><i className="fas fa-chevron-right"></i> Inicio</li>
-              <li className="li"><i className="fas fa-chevron-right"></i> Productos</li>
-              <li className="li"><i className="fas fa-chevron-right"></i> Post</li>
-              <li className="li"><i className="fas fa-chevron-right"></i> Eventos</li>
+              <li className="li"><i className="fas fa-chevron-right"></i> <a target="_blank" href="https://imm.pe/">IMM</a></li>
+              <li className="li"><i className="fas fa-chevron-right"></i> <a target="_blank" href="https://immetabolico.pe/">IMMetabólico</a></li>
+              <li className="li"><i className="fas fa-chevron-right"></i> <a target="_blank" href="https://www.immlatam.com/views/test.html">IMMLatam</a></li>
             </ul>
             <ul className="list-pages">
               <h2 className="subtitle">Contáctenos</h2>
