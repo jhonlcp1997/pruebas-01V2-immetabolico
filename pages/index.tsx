@@ -4,6 +4,7 @@ import { ViewBlogs } from "../ui/blogs/ViewBlogs";
 import { BannerMapOne, BannerOffOne, FooterOne, HeaderOne, JumbotronOne, MainOne, SpanBarOne } from "../ui/components";
 import { FormContacUs } from "../ui/components/forms/FormContacUs";
 import { SectionWhoWeAre } from "../ui/components/sections/SectionWhoWeAre";
+import { SpanButtonCall } from "../ui/components/spanBars/SpanButtonCall";
 
 interface Props {
   imm: string,
@@ -37,6 +38,8 @@ const Home: NextPage<Props>=({imm}) => {
         <BannerMapOne />
 
         <FormContacUs />
+
+        <SpanButtonCall />
 
         <FooterOne />
 
