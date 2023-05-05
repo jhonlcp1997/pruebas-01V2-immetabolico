@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react";
+import { useBlogFetch } from "../../hooks/useBlogFetch";
 import { FooterOne, FormOne, NavbarOne } from "../../ui/components";
+import { PropsBlogs } from "../../interfaces/PropsBlog";
 
 const blogsList = [
   {
@@ -65,23 +68,28 @@ const blogsList = [
 
 const listRoutes = [
   {
-    id:0,
+    id: 0,
     path: 'popular',
     namePage: 'Populares'
   },
   {
-    id:1,
+    id: 1,
     path: 'newest',
     namePage: 'Más nuevos'
   },
   {
-    id:2,
+    id: 2,
     path: 'oldest',
     namePage: 'Más antiguos'
   },
 ]
 
 export const LayoutBlogOne = () => {
+
+  const data = useBlogFetch();
+  
+  const {datas} = data;
+
   return (
     <>
       <NavbarOne listRoutes={listRoutes} rootPage='blogs' />
@@ -91,7 +99,7 @@ export const LayoutBlogOne = () => {
       <section className="blogs">
         <h2 className="subtitle">Nuestros blogs</h2>
         <div className="box-container">
-          {blogsList.map((element) => (
+          {/* {blogsList.map((element) => (
             <div className="box" key={element.id}>
               <div className="image">
                 <img src={element.imgBlog} alt={element.titleBlog} />
@@ -107,7 +115,29 @@ export const LayoutBlogOne = () => {
                 <a href="blog/index.html" className="btn">leer mas...</a>
               </div>
             </div>
-          ))}
+          ))} */}
+          {datas ? (datas.map((element) => (
+            <div className="box" key={element.id}>
+              <div className="image">
+                <img src={element.imgBlog} alt={element.titleBlog} />
+              </div>
+              <div className="content">
+                <div className="date">
+                  <h3>{element.dayCreateBlog}</h3>
+                  <span>{element.monthCreateBlog}</span>
+                </div>
+                <a href="#" className="user"><i className="fas fa-user"></i> por {element.authorBlog}</a>
+                <a href="#" className="title">{element.titleBlog}</a>
+                <p>{element.descriptionBlog}</p>
+                <a href={`/blogs/${element.id}`} className="btn">leer mas...</a>
+              </div>
+            </div>
+          ))) 
+            :
+          (
+            <p>No hay nada</p>
+          )
+          }
         </div>
         <div className="section-products__buttons">
           <a href="#">Anterior</a>
