@@ -31,7 +31,7 @@ export const FooterOne = () => {
 
         <footer className="footer__bottom">
           <h4 className="subtitle">Todos los derechos reservados</h4>
-          <h4 className="subtitle">© 2022 Instituto Médico de la Mujer</h4>
+          <h4 className="subtitle">© { new Date().getFullYear()} Instituto Médico de la Mujer</h4>
         </footer>
       </footer>
     </>
