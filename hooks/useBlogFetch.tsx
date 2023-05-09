@@ -27,6 +27,7 @@ export const useOneBlogFetch = (id:number)=> {
 
     if(!id) return
     const {data} = await axios.get(`http://localhost:8000/api/blog/${id}`)
+    if(!data) return
     setDatas(data)
   }
 
