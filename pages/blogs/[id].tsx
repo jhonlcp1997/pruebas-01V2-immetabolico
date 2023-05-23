@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { HeadLayoutOne } from '../../Layouts/Heads/HeadLayoutOne'
 import { HeaderOne } from '../../ui/components'
 import { useRouter } from 'next/router'
@@ -12,7 +12,6 @@ export default function blog() {
   // const [idBlog, setidBlog] = useState<string | undefined>()
   const id = Number(router.query.id)
   const {datas} = useOneBlogFetch(id)
-
   
   return (
     <>
@@ -31,7 +30,7 @@ export default function blog() {
                 </div>
                 <a href="#" className="user"><i className="fas fa-user"></i> por {datas?.authorBlog}</a>
                 <a href="#" className="title">{datas?.titleBlog}</a>
-                <p>{datas?.descriptionBlog}</p>
+                <div dangerouslySetInnerHTML={{ __html: datas ? datas.descriptionBlog : ''}} id='texto'></div>
                 <Link href="/blogs" className="btn">Regresar</Link>
               </div>
             </div>
