@@ -5,11 +5,17 @@ import { PropsBlogs } from "../interfaces/PropsBlog"
 export const useBlogFetch = () => {
 
   const [datas, setDatas] = useState<PropsBlogs[]>()
+  const [stateFetch, setStateFetch] = useState<unknown>()
 
   const getData = async()=>{
 
-    const {data} = await axios.get('http://localhost:8000/api/blogs')
-    setDatas(data)
+    try {
+      
+      const {data} = await axios.get('http://localhost:8000/api/blogs')
+      setDatas(data)
+    } catch (error) {
+      setStateFetch(error);
+    }
   }
 
   useEffect(() => {
@@ -17,7 +23,7 @@ export const useBlogFetch = () => {
   }, [])
   
 
-  return {datas}
+  return {datas, stateFetch}
 }
 
 export const useOneBlogFetch = (id:number)=> {

@@ -87,8 +87,8 @@ const listRoutes = [
 export const LayoutBlogOne = () => {
 
   const data = useBlogFetch();
-  
-  const {datas} = data;
+
+  const { datas, stateFetch } = data;
 
   return (
     <>
@@ -132,11 +132,21 @@ export const LayoutBlogOne = () => {
                 <a href={`/blogs/${element.id}`} className="btn">leer mas...</a>
               </div>
             </div>
-          ))) 
+          )))
             :
-          (
-            <p>No hay nada</p>
-          )
+            (
+              stateFetch ? (
+                <p className="box__error">Ups! hubo un error, intentelo más tarde</p>
+              )
+                :
+                (
+                  <div className="loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                )
+            )
           }
         </div>
         <div className="section-products__buttons">
